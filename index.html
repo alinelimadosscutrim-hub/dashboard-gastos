@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard de Gastos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Dashboard de Gastos</h1>
+
+    <form id="formGasto">
+      <input id="descricao" placeholder="Descrição" required />
+      <input id="valor" type="number" step="0.01" placeholder="Valor" required />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <section class="resumo">
+      <div>Total: R$ <span id="total">0.00</span></div>
+      <button id="limpar">Limpar</button>
+    </section>
+
+    <ul id="lista"></ul>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
